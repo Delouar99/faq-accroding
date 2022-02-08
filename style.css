@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #e9e9e9;
+    overflow: hidden;
+   
+}
+
+/* haq-content........................................ */
+
+.haq-content{
+    width: 500px;
+    margin: 100px auto 0;
+}
+
+.haq-content .haq-item{
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.haq-content .haq-item .haq-header{
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 10px;
+   
+}
+
+.haq-content .haq-item .haq-header::after{
+    content: '\005E';
+    font-size: 40px;
+    color: orange;
+   position: absolute;
+   right: 0;
+   top: -10px;
+   transition: .4s;
+}
+
+.haq-content .haq-item .haq-header.active::after{
+    transform: rotate(180deg);
+}
+
+.haq-content .haq-item .haq-body{
+height: 0;
+overflow: hidden;
+transition: .4s;
+}
+.haq-content .haq-item .haq-body .body-content p{
+    font-size: 20px;
+    
+}
